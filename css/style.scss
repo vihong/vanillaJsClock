@@ -1,0 +1,63 @@
+//--------------- PALLETTE --------------------------//
+
+//--------------- GLOBAL --------------------------//
+
+html {
+  margin: 0;
+  padding: 0;
+  background-color: lightcoral;
+  text-align: center;
+  font-size: 10px;
+}
+
+body {
+  font-size: 2rem;
+}
+
+img {
+  box-sizing: border-box;
+}
+
+//--------------- LOCAL CSS --------------------------//
+
+.clock {
+  width: 30rem;
+  height: 30rem;
+  border: 10px solid white;
+  border-radius: 50%;
+  margin: 50px auto;
+  .clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px);
+    .hand {
+      width: 50%;
+      height: 6px;
+      background: #000;
+      position: absolute;
+      top: 50%;
+      transform-origin: 100%;
+      transform: rotate(90deg);
+      transition: all 0.05s;
+    //   transition-timing-function: cubic-bezier(0.23, 1.71, 0.53, 1.01);
+    }
+    .hour-hand {
+      background: red;
+    }
+    .min-hand {
+      background: blue;
+    }
+    .second-hand {
+      background: black;
+    }
+  }
+}
+
+
+// .notransition {
+//     -webkit-transition: none !important;
+//     -moz-transition: none !important;
+//     -o-transition: none !important;
+//     transition: none !important;
+//   }
